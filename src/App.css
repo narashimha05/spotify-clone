@@ -1,38 +1,325 @@
-.App {
-  text-align: center;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app{
+  width: 100%;
+  height: 100vh;
+  background-color: #000000;
+  color: white;
+  position: relative;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidebar{
+width: 25%;
+float: left;
+height: 90%;
+margin-left: 5px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.minicompo1 {
+  background-color: #121212;
+  margin-top: 10px;
+  padding-top: 10px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  border-radius: 5px;
+  padding-left: 20px;
+}
+.minicompo1 p{
+  color: white;
+  font-size: 16px;
+  margin-left: 3px;
+  font-weight: 500;
+}
+.minicompo2 {
+  background-color: #121212;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+}
+.minicompo2 p{
+  color: white;
+  font-size: 16px;
+  margin-left: 15px;
+  font-weight: 500;
+}
+.minicompo3 {
+  background-color: #121212;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  padding-left: 20px;
+  margin-bottom: 5px;
+}
+.minicompo3 p{
+  color: white;
+  font-size: 16px;
+  margin-left: 15px;
+  font-weight: 500;
+}
+.master{
+  background-color: #121212;
+  height: 75%;
+}
+.minicompo4 {
+  background-color: #121212;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  padding-left: 20px;
+  margin-bottom: 5px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.minicompo4 .miniminicompo1{
+  display: flex;
+  flex-direction: row;
+}
+.miniminicompo2 {
+  padding-right: 10px;
+}
+.minicompo5 {
+  color: white;
+  background-color: #242424;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+}
+.minicompo5 .minitext1 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.minicompo5 .minitext2 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.minicompo5 button{
+  border-radius: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 13px;
+  padding-right: 13px;
+  outline: none;
+  border-width: 0;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.minicompo6 {
+  color: white;
+  background-color: #242424;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.minicompo6 .minitext3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.minicompo6 .minitext4 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.minicompo6 button{
+  border-radius: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 13px;
+  padding-right: 13px;
+  outline: none;
+  border-width: 0;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .musicplayer{
+  border: 2px solid red;
+  height: 10%;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+} */
+
+
+
+
+.mainbar{
+  width: 73%;
+  background-color: #101010;
+  float: right;
+  height: 88%;
+  padding-left: 10px;
+  margin-right: 5px;
+  color: white;
+  margin-top: 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.minimainbar1 {
+  background-color: #121212;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+}
+.lefticon, .righticon, .bellicon{
+  border-radius: 50%;
+  background-color: black;
+  padding: 5px;
+  margin-right: 5px;
+}
+.miniminimainbar2{
+  display: flex;
+  flex-direction: row;
+}
+.miniminimainbar2 .explorepremium{
+  background-color: white;
+  font-size: 16px;
+  margin-left: 15px;
+  color: black;
+  border-radius: 22px;
+  padding: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-right: 5px;
+  margin-right: 10px;
+}
+.miniminimainbar2 .letterC {
+  border-radius: 0;
+  margin-left: 20px;
+  outline: none;
+  margin-right: 15px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.minimainbar2 {
+  background-color: #121212;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  justify-content: start;
+}
+.minimainbar2 p{
+  color: white;
+  font-size: 16px;
+  margin-left: 15px;
+  font-weight: 500;
+  padding: 5px;
+}
+
+.imgicon {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+.minimainbar3{
+  background-color: #121212;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+.commonmainbar{
+  background-color: #242424;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-right: 30px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+.minimainbar4 {
+  margin-top: 15px;
+  margin-left: 20px;
+  font-weight: 500;
+}
+.minimainbar4 p{
+  font-size: 24px;
+}
+.music-card {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.music-card img {
+  width: 128px;
+  height: 128px;
+  margin-right: 10px;
+}
+.minimainbar5 {
+  display: flex;
+  flex-direction: row;
+}
+.progressbar {
+  width: 97%;
+  height: 5px;
+  background-color: #242424;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+.controlicons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  margin-right: 10px;
+}
+.playpause {
+  font-size: 16px;
+  background: none;
+  border: none;
+  color: white;
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
